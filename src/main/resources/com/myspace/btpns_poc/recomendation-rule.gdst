@@ -152,20 +152,6 @@
     <set-field-col52>
       <typedDefaultValue>
         <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </typedDefaultValue>
-      <hideColumn>false</hideColumn>
-      <width>100</width>
-      <header>Recommendation</header>
-      <boundName>app</boundName>
-      <factField>recommendation</factField>
-      <type>String</type>
-      <update>false</update>
-    </set-field-col52>
-    <set-field-col52>
-      <typedDefaultValue>
-        <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
