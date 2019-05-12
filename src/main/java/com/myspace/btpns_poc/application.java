@@ -6,12 +6,126 @@ package com.myspace.btpns_poc;
 
 public class application implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public application() {
-    }
+	@org.kie.api.definition.type.Label(value = "Age")
+	private java.lang.Integer age;
+	@org.kie.api.definition.type.Description(value = "1=single\n2=maried\n3=divorced")
+	@org.kie.api.definition.type.Label(value = "Marital Status")
+	private java.lang.Integer status;
+	@org.kie.api.definition.type.Label(value = "Co Living Status")
+	private java.lang.Boolean coliving;
+	@org.kie.api.definition.type.Label(value = "Negative Flag")
+	private java.lang.Boolean negativeflag;
+	@org.kie.api.definition.type.Label(value = "Tenor")
+	private java.lang.Integer tenor;
+	@org.kie.api.definition.type.Label(value = "PDK ")
+	private java.lang.Boolean pdkflag;
+	private java.lang.Boolean deviation;
+	private java.lang.String recommendation;
+	@org.kie.api.definition.type.Label(value = "Deviation Code")
+	private java.lang.String deviationcode;
+	@org.kie.api.definition.type.Label(value = "Reject Code")
+	private java.lang.String rejectcode;
 
+	public application() {
+	}
 
+	public java.lang.Integer getAge() {
+		return this.age;
+	}
 
+	public void setAge(java.lang.Integer age) {
+		this.age = age;
+	}
+
+	public java.lang.Integer getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(java.lang.Integer status) {
+		this.status = status;
+	}
+
+	public java.lang.Boolean getColiving() {
+		return this.coliving;
+	}
+
+	public void setColiving(java.lang.Boolean coliving) {
+		this.coliving = coliving;
+	}
+
+	public java.lang.Boolean getNegativeflag() {
+		return this.negativeflag;
+	}
+
+	public void setNegativeflag(java.lang.Boolean negativeflag) {
+		this.negativeflag = negativeflag;
+	}
+
+	public java.lang.Integer getTenor() {
+		return this.tenor;
+	}
+
+	public void setTenor(java.lang.Integer tenor) {
+		this.tenor = tenor;
+	}
+
+	public java.lang.Boolean getPdkflag() {
+		return this.pdkflag;
+	}
+
+	public void setPdkflag(java.lang.Boolean pdkflag) {
+		this.pdkflag = pdkflag;
+	}
+
+	public java.lang.Boolean getDeviation() {
+		return this.deviation;
+	}
+
+	public void setDeviation(java.lang.Boolean deviation) {
+		this.deviation = deviation;
+	}
+
+	public java.lang.String getRecommendation() {
+		return this.recommendation;
+	}
+
+	public void setRecommendation(java.lang.String recommendation) {
+		this.recommendation = recommendation;
+	}
+
+	public java.lang.String getDeviationcode() {
+		return this.deviationcode;
+	}
+
+	public void setDeviationcode(java.lang.String deviationcode) {
+		this.deviationcode = deviationcode;
+	}
+
+	public java.lang.String getRejectcode() {
+		return this.rejectcode;
+	}
+
+	public void setRejectcode(java.lang.String rejectcode) {
+		this.rejectcode = rejectcode;
+	}
+
+	public application(java.lang.Integer age, java.lang.Integer status,
+			java.lang.Boolean coliving, java.lang.Boolean negativeflag,
+			java.lang.Integer tenor, java.lang.Boolean pdkflag,
+			java.lang.Boolean deviation, java.lang.String recommendation,
+			java.lang.String deviationcode, java.lang.String rejectcode) {
+		this.age = age;
+		this.status = status;
+		this.coliving = coliving;
+		this.negativeflag = negativeflag;
+		this.tenor = tenor;
+		this.pdkflag = pdkflag;
+		this.deviation = deviation;
+		this.recommendation = recommendation;
+		this.deviationcode = deviationcode;
+		this.rejectcode = rejectcode;
+	}
 
 }
