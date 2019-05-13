@@ -127,5 +127,21 @@ public class application implements java.io.Serializable {
 		this.deviationcode = deviationcode;
 		this.rejectcode = rejectcode;
 	}
+	
+	@Override
+    public String toString() {
+        return "application{" +
+                "application='" + application + '\'' +
+                ", status='" + status + '\'' +
+                ", coliving='" + coliving + '\'' +
+                ", negativeflag='" + negativeflag + '\'' +
+                ", tenor='" + tenor + '\'' +
+                ", pdkflag='" + pdkflag + '\'' +
+                ", deviation='" + deviation + '\'' +
+                ", recommendation='" + recommendation + '\'' +
+                ", deviationcode='" + deviationcode + '\'' +
+                ", rejectcode='" + rejectcode + '\'' +
+                '}';
+    }
 
 }
