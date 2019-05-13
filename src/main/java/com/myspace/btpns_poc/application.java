@@ -28,8 +28,6 @@ public class application implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Reject Code")
 	private java.lang.String rejectcode;
 
-	private java.lang.String managerdecison;
-
 	public application() {
 	}
 
@@ -113,20 +111,11 @@ public class application implements java.io.Serializable {
 		this.rejectcode = rejectcode;
 	}
 
-	public java.lang.String getManagerdecison() {
-		return this.managerdecison;
-	}
-
-	public void setManagerdecison(java.lang.String managerdecison) {
-		this.managerdecison = managerdecison;
-	}
-
 	public application(java.lang.Integer age, java.lang.Integer status,
 			java.lang.Boolean coliving, java.lang.Boolean negativeflag,
 			java.lang.Integer tenor, java.lang.Boolean pdkflag,
 			java.lang.Boolean deviation, java.lang.String recommendation,
-			java.lang.String deviationcode, java.lang.String rejectcode,
-			java.lang.String managerdecison) {
+			java.lang.String deviationcode, java.lang.String rejectcode) {
 		this.age = age;
 		this.status = status;
 		this.coliving = coliving;
@@ -137,7 +126,6 @@ public class application implements java.io.Serializable {
 		this.recommendation = recommendation;
 		this.deviationcode = deviationcode;
 		this.rejectcode = rejectcode;
-		this.managerdecison = managerdecison;
 	}
 
 }
