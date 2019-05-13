@@ -131,7 +131,7 @@ public class application implements java.io.Serializable {
 	@Override
     public String toString() {
         return "application{" +
-                "application='" + application + '\'' +
+                "age='" + age + '\'' +
                 ", status='" + status + '\'' +
                 ", coliving='" + coliving + '\'' +
                 ", negativeflag='" + negativeflag + '\'' +
