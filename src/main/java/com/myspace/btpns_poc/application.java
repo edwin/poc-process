@@ -8,25 +8,27 @@ public class application implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Age")
+	@org.kie.api.definition.type.Label("Age")
 	private java.lang.Integer age;
-	@org.kie.api.definition.type.Description(value = "1=single\n2=maried\n3=divorced")
-	@org.kie.api.definition.type.Label(value = "Marital Status")
+	@org.kie.api.definition.type.Description("1=single\n2=maried\n3=divorced")
+	@org.kie.api.definition.type.Label("Marital Status")
 	private java.lang.Integer status;
-	@org.kie.api.definition.type.Label(value = "Co Living Status")
+	@org.kie.api.definition.type.Label("Co Living Status")
 	private java.lang.Boolean coliving;
-	@org.kie.api.definition.type.Label(value = "Negative Flag")
+	@org.kie.api.definition.type.Label("Negative Flag")
 	private java.lang.Boolean negativeflag;
-	@org.kie.api.definition.type.Label(value = "Tenor")
+	@org.kie.api.definition.type.Label("Tenor")
 	private java.lang.Integer tenor;
-	@org.kie.api.definition.type.Label(value = "PDK ")
+	@org.kie.api.definition.type.Label("PDK ")
 	private java.lang.Boolean pdkflag;
 	private java.lang.Boolean deviation;
 	private java.lang.String recommendation;
-	@org.kie.api.definition.type.Label(value = "Deviation Code")
+	@org.kie.api.definition.type.Label("Deviation Code")
 	private java.lang.String deviationcode;
-	@org.kie.api.definition.type.Label(value = "Reject Code")
+	@org.kie.api.definition.type.Label("Reject Code")
 	private java.lang.String rejectcode;
+
+	private java.lang.String managerdecison;
 
 	public application() {
 	}
@@ -111,11 +113,20 @@ public class application implements java.io.Serializable {
 		this.rejectcode = rejectcode;
 	}
 
+	public java.lang.String getManagerdecison() {
+		return this.managerdecison;
+	}
+
+	public void setManagerdecison(java.lang.String managerdecison) {
+		this.managerdecison = managerdecison;
+	}
+
 	public application(java.lang.Integer age, java.lang.Integer status,
 			java.lang.Boolean coliving, java.lang.Boolean negativeflag,
 			java.lang.Integer tenor, java.lang.Boolean pdkflag,
 			java.lang.Boolean deviation, java.lang.String recommendation,
-			java.lang.String deviationcode, java.lang.String rejectcode) {
+			java.lang.String deviationcode, java.lang.String rejectcode,
+			java.lang.String managerdecison) {
 		this.age = age;
 		this.status = status;
 		this.coliving = coliving;
@@ -126,6 +137,7 @@ public class application implements java.io.Serializable {
 		this.recommendation = recommendation;
 		this.deviationcode = deviationcode;
 		this.rejectcode = rejectcode;
+		this.managerdecison = managerdecison;
 	}
 
 }
